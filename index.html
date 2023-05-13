@@ -21,8 +21,11 @@
         <button type="button" class="btn btn-info">Info</button>
       </div>
     </nav>
-    <table>
-      2023
+
+    <table class="table text-center">
+      <tr>
+        <th>2023</th>
+      </tr>
       <tr>
         <th>Spring</th>
         <th>Summer</th>
@@ -30,7 +33,33 @@
       </tr>
       <tr>
         <td>
-          <div class="card" style="width: 18rem">
+          <div class="card text-center" style="width: 18rem">
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item"
+                data-toggle="modal"
+                data-target="#myModal"
+              >
+                An item
+              </li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+          </div>
+        </td>
+
+        <td>
+          <div class="card text-center" style="width: 18rem">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">An item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+            </ul>
+          </div>
+        </td>
+
+        <td>
+          <div class="card text-center" style="width: 18rem">
             <ul class="list-group list-group-flush">
               <li class="list-group-item">An item</li>
               <li class="list-group-item">A second item</li>
@@ -40,6 +69,51 @@
         </td>
       </tr>
     </table>
+
+    <!-- Button trigger modal -->
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
   </body>
